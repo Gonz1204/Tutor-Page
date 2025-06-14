@@ -11,7 +11,7 @@
     <header>
         <h1>Bronxville High School Tutor Page</h1>
         <nav>
-            <a href="/Web.html" class="nav-link">Back to Tutors</a>
+            <a href="index.html" class="nav-link">Back to Tutors</a>
         </nav>
     </header>
 
@@ -29,224 +29,216 @@
     <script>
         // Tutor data object containing information for all tutors
         const tutorData = {
-    "carson-kochansky": {
-        "name": "Carson Kochansky",
-        "subject": "Math, Science",
-        "image": "/img/Carson.png",
-        "email": "carsonk26@bronxvilleschool.org",
-        "academic": "Completed multiple AP courses in science and computer science, including AP Chemistry and AP Biology. Achieved top scores of 5 on all AP exams taken. Demonstrated exceptional academic performance across mathematics and science disciplines.",
-        "experience": "While not having formal tutoring experience at Bronxville, Carson has extensive teaching experience with TASSEL in Cambodia, conducting online classes for 15-20 students and one-on-one sessions with Khmer teachers.",
-        "approach": "Comfortable with both Zoom and in-person tutoring. Willing to conduct group sessions and adapt teaching methods to student needs.",
-        "Classes": "AP Chemistry, Biology, Earth Science, AP Computer Science (CSA and CSP), Algebra 2, Pre-calculus",
-        "grades": "No preference",
-        "hours": "Sat, Sun, Mon/Fri after 5",
-        "rate": "$35/hour (Ind.), $25/hour (Group)",
-        "testimonials": [],
-        "extracurricular": "Plays soccer for Bronxville varsity team and World Class FC. Runs winter and spring track. President of Astronomy and Chess clubs. Officer of TASSEL, a nonprofit teaching English in rural Cambodia. Passionate photographer for the Bronxville School Foundation."
-    },
-    "kara-kochansky": {
-        "name": "Kara Kochansky",
-        "subject": "Math, Science, French",
-        "image": "/img/Kara.png",
-        "email": "karak26@bronxvilleschool.org",
-        "academic": "Junior with multiple academic honors, including Women's Service Memorial Award and Rhodes College Book Award. Consistently recognized for critical thinking and excellence in academic competitions, with notable achievements in French and academic contests.",
-        "experience": "Currently tutoring Algebra I, Geometry, and Chemistry. Has prior tutoring experience in French and various math subjects, demonstrating a versatile teaching background.",
-        "approach": "Offers Zoom, in-person, and hybrid tutoring. Flexible in teaching style, able to help with homework, test preparation, and creating custom study materials tailored to student needs.",
-        "Classes": "Math: Algebra I, Algebra II, Precalculus; Science: Chemistry, Biology, AP Chemistry; Computer Science: AP CSP, AP CSA; French: Up to French III",
-        "grades": "No preference",
-        "hours": "Mon-Fri after 5:15, Sat-Sun 9-5",
-        "rate": "$35/hour",
-        "testimonials": [],
-        "extracurricular": "Varsity Soccer and Track captain, Hostess at La Casa Bronxville. Officer of TASSEL, French Club Vice President, and President of Project Happy Feet. Junior Liaison for Board of Education."
-    },
-    "william-tiantong": {
-        "name": "William Tiantong",
-        "subject": "English, History, Mathematics, Science, Mandarin",
-        "image": "/img/Actual Tong.png",
-        "email": "Tiantongw26@bronxvilleschool.org",
-        "academic": "11th-grade student with exceptional academic performance. Achieved 5 on AP World and AP Mandarin exams. Scored 1520 on SAT. Consistently maintains all A's in challenging coursework.",
-        "experience": "Tutored children in reading from the Bronx during a two-month summer program. Has also tutored his sister, demonstrating patient and adaptive teaching skills.",
-        "approach": "Offers both Zoom and in-person tutoring. Provides a casual, personalized learning experience with a focus on understanding individual learning styles and test preparation strategies.",
-        "Classes": "Algebra 1, Algebra 2, Geo-Trig, Pre-Algebra, APUSH, AP World, History Honors, All Mandarin Classes, Biology Honors, AP Environmental Science",
-        "grades": "No preference",
-        "hours": "Tue-Thu after 4:30, Sat after 12:30, All Sun",
-        "rate": "$35/hour, $45/hour (Mandarin)",
-        "testimonials": [],
-        "extracurricular": "Active in weightlifting and oboe performance. Enjoys hiking and exploring opportunities for personal and academic growth."
-    },
-    "simon-leka": {
-        "name": "Simon Leka",
-        "subject": "Math, Science, Computer Science, English",
-        "image": "/img/Simon.png",
-        "email": "simonl26@bronxvilleschool.org",
-        "academic": "High-achieving student at Bronxville High School with a 4.28 GPA. Completed rigorous coursework including AP Computer Science, AP Chemistry, and Differential Calculus. Multiple academic awards, including National History Day State Winner.",
-        "experience": "Runs a private tutoring business since September 2023. Demonstrated skills in explaining complex topics, especially for students with learning accommodations. Previous experience working in customer service and communication-intensive roles.",
-        "approach": "Offers flexible tutoring options, adapting to student needs. Open to various subjects, grades, and scheduling requirements.",
-        "Classes": "AP Computer Science, AP Chemistry, Physics, AP World History, Algebra 2, Calculus, English",
-        "grades": "No preference",
-        "hours": "Flexible",
-        "rate": "$60/hour",
-        "testimonials": [],
-        "extracurricular": "Treasurer of Astronomy Club, Secretary of Math Club, and Member of Model UN. Plays Varsity Soccer for Bronxville and Club Soccer for Westchester Flames. Accomplished violinist and All-County Musician."
-    },
-    "ryes-adkins": {
-        "name": "Ryes Adkins",
-        "subject": "Biology, Earth Science, Chemistry",
-        "image": "/img/IMG_4622.jpeg",
-        "email": "ryesigurdsonadkins@gmail.com",
-        "academic": "Completed AP Biology and demonstrated exceptional scientific aptitude by doubling science coursework during freshman year.",
-        "experience": "Extensive tutoring experience with over 60 hours of service at Bronxville Homework Club, primarily assisting middle school students with their assignments.",
-        "approach": "Offers in-person and hybrid tutoring options. Willing to conduct group sessions and adapt to individual student needs.",
-        "Classes": "Middle School Science, Core Biology, Core Earth Science, Middle School History",
-        "grades": "6-8 (all topics), Any Grade (Science)",
-        "hours": "Mon, Tue, Thu, Fri 3-5",
-        "rate": "$30/hour (Ind.), $25/hour (Group)",
-        "testimonials": [],
-        "extracurricular": "Participated in NYU Precollege Natural and Social Sciences program. Volunteers with nonprofits focused on food waste and sustainability. Works as a Sous Chef and Line Cook, including experience at a Michelin-star restaurant. Also works as a Com-Hab worker teaching cooking to special needs individuals."
-    },
-    "teo-valdes": {
-        "name": "Teo Valdes",
-        "subject": "Math, Chemistry, Physics, French",
-        "image": "/img/Teo.jpeg",
-        "email": "teov26@bronxvilleschool.org",
-        "academic": "Currently taking challenging coursework including Differential Calculus, AP Physics, AP Chemistry, AP World History, AP Computer Science, and French.",
-        "experience": "Previous one-on-one tutoring experience, demonstrating ability to provide personalized academic support.",
-        "approach": "Prefers in-person tutoring. Flexible and willing to adapt to student needs, including group sessions.",
-        "Classes": "Algebra, Geo-Trig, Differential Calculus, AP Chemistry",
-        "grades": "K-10/11",
-        "hours": "Every Day",
-        "rate": "$30/hour",
-        "testimonials": [],
-        "extracurricular": "Participates in track. Active in coding and math club."
-    },
-    "ee-ee-sung": {
-        "name": "Ee-ee Sung",
-        "subject": "Algebra, Middle School Math & Science",
-        "image": "/img/Ee-ee.png",
-        "email": "sungeeee0@gmail.com",
-        "academic": "High-achieving student with A+ grades in AP Chemistry, AP World History, and Algebra 2/Pre-Calculus. Recipient of National French Exam Gold Awards and National History Day Bronze Medal.",
-        "experience": "No formal tutoring experience, but strong academic background in mathematics and science.",
-        "approach": "Offers hybrid tutoring options. Willing to conduct group sessions and adapt to student needs.",
-        "Classes": "Algebra, Biology, World History",
-        "grades": "6th-9th",
-        "hours": "Mon & Wed after 5",
-        "rate": "$16/hour",
-        "testimonials": [],
-        "extracurricular": "Participates in Cross Country and Track and Field. Volunteers at Gramatan Village and is involved with Parsons Fine Arts."
-    },
-    "charlotte-dorr": {
-        "name": "Charlotte Dorr",
-        "subject": "Science, Math, English",
-        "image": "/img/Charlotte.png",
-        "email": "charlotted27@bronxvilleschool.org",
-        "academic": "High-achieving student with consistently high A's in AP Chemistry, AP CSP, and advanced math courses. Doubled science coursework freshman year, demonstrating strong academic commitment.",
-        "experience": "Informal tutoring in biology and math. Also has experience tutoring beginner-level music, showing adaptability in teaching.",
-        "approach": "Offers hybrid tutoring with a flexible teaching style, adapting methods to maximize student learning and accommodate individual needs.",
-        "Classes": "Algebra 1, Intro Chemistry, Biology, Earth Science, English 9-10",
-        "grades": "Ideally Freshman or Younger",
-        "hours": "Wed, Tue, Fri (Generally Available)",
-        "rate": "$20/hour",
-        "testimonials": [],
-        "extracurricular": "Active in Model United Nations, plays harp in orchestra, runs cross country, and works as a babysitter."
-    },
-    
-    "elizabeth-barnes": {
-        "name": "Elizabeth Barnes",
-        "subject": "French, English, Math, History",
-        "image": "/img/Elizabeth.png",
-        "email": "elizabethdbarnes11@gmail.com",
-        "academic": "High-achieving student with 4.28 unweighted GPA, enrolled in honors and AP classes. Accomplished in National History Day research and achieved perfect scores on National French Exam for two consecutive years.",
-        "experience": "Experienced in helping younger siblings with homework and working with children through babysitting and summer camp roles. Skilled at articulating complex information clearly.",
-        "approach": "Offers both in-person and Zoom tutoring. Emphasizes repeated practice and core concept understanding, with a flexible teaching style tailored to individual student needs.",
-        "Classes": "Middle School English/History, French 1-2, Middle School Math, Algebra 1",
-        "grades": "Elementary/Middle School, 9th Grade",
-        "hours": "Wed after 4:15, Fri, Sun",
-        "rate": "$20/hour",
-        "testimonials": [],
-        "extracurricular": "Active in crew, writing, and art. Volunteers with Youth Community Fund and Gramatan Village. Serves as Grade Representative in Student-Faculty Legislature, works with school newspaper and TASSEL teaching English to Cambodian students."
-    },
-
-     "maggie-minor": {
-        "name": "Maggie Minor",
-        "subject": "Math, Chemistry",
-        "image": "/img/Maggie.jpg",
-        "email": "",
-        "academic": "Two-time recipient of the Roy D Williamson Award for Excellence in Math. Currently taking advanced courses including AP Chemistry, AP World History, and AP Computer Science Principles.",
-        "experience": "Experienced in tutoring English to young kids in Cambodia through TASSEL program. Has also tutored younger Bronxville students in various subject areas.",
-        "approach": "Offers hybrid tutoring options, flexible to student needs and learning styles.",
-        "Classes": "Geometry-Trigonometry, Algebra 2/Pre-Calculus, AP Chemistry, AP Computer Science Principles",
-        "grades": "6-10",
-        "hours": "Weeknights 3-6, Weekends",
-        "rate": "$30-40/hour",
-        "testimonials": [],
-        "extracurricular": "Active in squash, volunteering, and tutoring through TASSEL program."
-    },
-
-    "christopher-wilmott": {
-        "name": "Christopher Wilmott",
-        "subject": "Science, Math, History",
-        "image": "/img/Chris.jpeg",
-        "email": "christopherwilmott26@gmail.com",
-        "academic": "High-achieving student with a 4.1 GPA, demonstrating strong academic performance across multiple disciplines.",
-        "experience": "Tutored a freshman in Core Chemistry and Physics during junior year, showing experience in breaking down scientific concepts.",
-        "approach": "Prefers in-person tutoring, willing to work with multiple students in a session.",
-        "Classes": "Geometry-Trigonometry, Algebra 2/Pre-Calculus, Differential Calculus, AP Chemistry, AP Physics 1, Core Chemistry and Physics, World History, AP World History, AP US History, Earth Science",
-        "grades": "No Preference",
-        "hours": "All Times Available",
-        "rate": "$30/hour",
-        "testimonials": [],
-        "extracurricular": "Varsity Tennis and Ski Team member. Involved in Chemistry Olympiad, Jazz Band, Science Speakers, and Careers Club."
-    },
-
-    "julian-gonzalez": {
-        "name": "Julian Gonzalez",
-        "subject": "Science & Mathematics",
-        "image": "/img/Julian.jpeg",
-        "email": "hooleeinn@gmail.com",
-        "academic": "Achieved a 5 on AP Chemistry exam. Maintains an A in Geometry-Trigonometry and currently studying AP Physics. Self-studied AP Biology, demonstrating academic initiative.",
-        "experience": "No formal tutoring experience at this time.",
-        "approach": "Prefers Zoom tutoring. Open to working with students taking specific science and math courses.",
-        "subjects": "Geometry-Trigonometry, AP Chemistry, AP Physics, Core Chemistry/Physics",
-        "grades": "Anyone taking listed courses or middle school science/math",
-        "hours": "Weekends Afternoons",
-        "rate": "$15/hour",
-        "testimonials": [],
-        "extracurricular": "Participates in track and works part-time."
-    },
-
-    "jack-goddard": {
-        "name": "Jack Goddard",
-        "subject": "Math, Science",
-        "image": "/img/Jack.JPG",
-        "email": "jackhgoddard@gmail.com",
-        "academic": "Entering 12th grade, following the highest math track. Completed AP Physics and AP Chemistry. Scheduled for an independent study in physics next year.",
-        "experience": "New tutor, bringing enthusiasm and recent academic experience to tutoring.",
-        "approach": "Offers flexible tutoring options including in-person, Zoom, and hybrid formats. Willing to work with multiple students in a session.",
-        "Classes": "Math up to Differential Calculus, Core Chemistry/Physics, AP Chemistry, AP Physics 1",
-        "grades": "No Preference",
-        "hours": "Weekdays after 3:30",
-        "rate": "$20/hour",
-        "testimonials": [],
-        "extracurricular": "Active in soccer, including refereeing soccer games. Co-president of the Math Club."
-    },
-    
-    "matthew-bici": {
-        "name": "Matthew Bici",
-        "subject": "Mathematics, Sciences",
-        "image": "/img/Mathew.png",
-        "email": "matthewgbici146@gmail.com",
-        "academic": "Completed multiple AP courses including AP Chemistry, consistently maintaining A averages. Enrolled in highest rigor math classes at Bronxville High School.",
-        "experience": "Experienced in informal tutoring, including helping cousins in Algebra 1 and Geometry. Actively tutors students at Mount Vernon Boys and Girls Club in various math subjects.",
-        "approach": "Offers hybrid tutoring options with flexibility for individual and group sessions.",
-        "Classes": "Algebra 1, Algebra 2, Core Chemistry, Core Physics, AP Chemistry",
-        "grades": "7-10",
-        "hours": "Monday-Friday after 6:30",
-        "rate": "$30/hour (Individual), $25/hour (Group)",
-        "testimonials": [],
-        "extracurricular": "Varsity Swimmer, Boy Scouts of America member, performs music at small venues."
-    }
-
-
+            "carson-kochansky": {
+                "name": "Carson Kochansky",
+                "subject": "Math, Science",
+                "image": "img/Carson.png",
+                "email": "carsonk26@bronxvilleschool.org",
+                "academic": "Completed multiple AP courses in science and computer science, including AP Chemistry and AP Biology. Achieved top scores of 5 on all AP exams taken. Demonstrated exceptional academic performance across mathematics and science disciplines.",
+                "experience": "While not having formal tutoring experience at Bronxville, Carson has extensive teaching experience with TASSEL in Cambodia, conducting online classes for 15-20 students and one-on-one sessions with Khmer teachers.",
+                "approach": "Comfortable with both Zoom and in-person tutoring. Willing to conduct group sessions and adapt teaching methods to student needs.",
+                "Classes": "AP Chemistry, Biology, Earth Science, AP Computer Science (CSA and CSP), Algebra 2, Pre-calculus",
+                "grades": "No preference",
+                "hours": "Sat, Sun, Mon/Fri after 5",
+                "rate": "$35/hour (Ind.), $25/hour (Group)",
+                "testimonials": [],
+                "extracurricular": "Plays soccer for Bronxville varsity team and World Class FC. Runs winter and spring track. President of Astronomy and Chess clubs. Officer of TASSEL, a nonprofit teaching English in rural Cambodia. Passionate photographer for the Bronxville School Foundation."
+            },
+            "kara-kochansky": {
+                "name": "Kara Kochansky",
+                "subject": "Math, Science, French",
+                "image": "img/Kara.png",
+                "email": "karak26@bronxvilleschool.org",
+                "academic": "Junior with multiple academic honors, including Women's Service Memorial Award and Rhodes College Book Award. Consistently recognized for critical thinking and excellence in academic competitions, with notable achievements in French and academic contests.",
+                "experience": "Currently tutoring Algebra I, Geometry, and Chemistry. Has prior tutoring experience in French and various math subjects, demonstrating a versatile teaching background.",
+                "approach": "Offers Zoom, in-person, and hybrid tutoring. Flexible in teaching style, able to help with homework, test preparation, and creating custom study materials tailored to student needs.",
+                "Classes": "Math: Algebra I, Algebra II, Precalculus; Science: Chemistry, Biology, AP Chemistry; Computer Science: AP CSP, AP CSA; French: Up to French III",
+                "grades": "No preference",
+                "hours": "Mon-Fri after 5:15, Sat-Sun 9-5",
+                "rate": "$35/hour",
+                "testimonials": [],
+                "extracurricular": "Varsity Soccer and Track captain, Hostess at La Casa Bronxville. Officer of TASSEL, French Club Vice President, and President of Project Happy Feet. Junior Liaison for Board of Education."
+            },
+            "william-tiantong": {
+                "name": "William Tiantong",
+                "subject": "English, History, Mathematics, Science, Mandarin",
+                "image": "img/Actual Tong.png",
+                "email": "Tiantongw26@bronxvilleschool.org",
+                "academic": "11th-grade student with exceptional academic performance. Achieved 5 on AP World and AP Mandarin exams. Scored 1520 on SAT. Consistently maintains all A's in challenging coursework.",
+                "experience": "Tutored children in reading from the Bronx during a two-month summer program. Has also tutored his sister, demonstrating patient and adaptive teaching skills.",
+                "approach": "Offers both Zoom and in-person tutoring. Provides a casual, personalized learning experience with a focus on understanding individual learning styles and test preparation strategies.",
+                "Classes": "Algebra 1, Algebra 2, Geo-Trig, Pre-Algebra, APUSH, AP World, History Honors, All Mandarin Classes, Biology Honors, AP Environmental Science",
+                "grades": "No preference",
+                "hours": "Tue-Thu after 4:30, Sat after 12:30, All Sun",
+                "rate": "$35/hour, $45/hour (Mandarin)",
+                "testimonials": [],
+                "extracurricular": "Active in weightlifting and oboe performance. Enjoys hiking and exploring opportunities for personal and academic growth."
+            },
+            "simon-leka": {
+                "name": "Simon Leka",
+                "subject": "Math, Science, Computer Science, English",
+                "image": "img/Simon.png",
+                "email": "simonl26@bronxvilleschool.org",
+                "academic": "High-achieving student at Bronxville High School with a 4.28 GPA. Completed rigorous coursework including AP Computer Science, AP Chemistry, and Differential Calculus. Multiple academic awards, including National History Day State Winner.",
+                "experience": "Runs a private tutoring business since September 2023. Demonstrated skills in explaining complex topics, especially for students with learning accommodations. Previous experience working in customer service and communication-intensive roles.",
+                "approach": "Offers flexible tutoring options, adapting to student needs. Open to various subjects, grades, and scheduling requirements.",
+                "Classes": "AP Computer Science, AP Chemistry, Physics, AP World History, Algebra 2, Calculus, English",
+                "grades": "No preference",
+                "hours": "Flexible",
+                "rate": "$60/hour",
+                "testimonials": [],
+                "extracurricular": "Treasurer of Astronomy Club, Secretary of Math Club, and Member of Model UN. Plays Varsity Soccer for Bronxville and Club Soccer for Westchester Flames. Accomplished violinist and All-County Musician."
+            },
+            "ryes-adkins": {
+                "name": "Rye Adkins",
+                "subject": "Biology, Earth Science, Chemistry",
+                "image": "img/IMG_4622.jpeg",
+                "email": "ryesigurdsonadkins@gmail.com",
+                "academic": "Completed AP Biology and demonstrated exceptional scientific aptitude by doubling science coursework during freshman year.",
+                "experience": "Extensive tutoring experience with over 60 hours of service at Bronxville Homework Club, primarily assisting middle school students with their assignments.",
+                "approach": "Offers in-person and hybrid tutoring options. Willing to conduct group sessions and adapt to individual student needs.",
+                "Classes": "Middle School Science, Core Biology, Core Earth Science, Middle School History",
+                "grades": "6-8 (all topics), Any Grade (Science)",
+                "hours": "Mon, Tue, Thu, Fri 3-5",
+                "rate": "$30/hour (Ind.), $25/hour (Group)",
+                "testimonials": [],
+                "extracurricular": "Participated in NYU Precollege Natural and Social Sciences program. Volunteers with nonprofits focused on food waste and sustainability. Works as a Sous Chef and Line Cook, including experience at a Michelin-star restaurant. Also works as a Com-Hab worker teaching cooking to special needs individuals."
+            },
+            "teo-valdes": {
+                "name": "Teo Valdes",
+                "subject": "Math, Chemistry, Physics, French",
+                "image": "img/Teo.jpeg",
+                "email": "teov26@bronxvilleschool.org",
+                "academic": "Currently taking challenging coursework including Differential Calculus, AP Physics, AP Chemistry, AP World History, AP Computer Science, and French.",
+                "experience": "Previous one-on-one tutoring experience, demonstrating ability to provide personalized academic support.",
+                "approach": "Prefers in-person tutoring. Flexible and willing to adapt to student needs, including group sessions.",
+                "Classes": "Algebra, Geo-Trig, Differential Calculus, AP Chemistry",
+                "grades": "K-10/11",
+                "hours": "Every Day",
+                "rate": "$30/hour",
+                "testimonials": [],
+                "extracurricular": "Participates in track. Active in coding and math club."
+            },
+            "ee-ee-sung": {
+                "name": "Ee-ee Sung",
+                "subject": "Algebra, Middle School Math & Science",
+                "image": "img/Ee-ee.png",
+                "email": "sungeeee0@gmail.com",
+                "academic": "High-achieving student with A+ grades in AP Chemistry, AP World History, and Algebra 2/Pre-Calculus. Recipient of National French Exam Gold Awards and National History Day Bronze Medal.",
+                "experience": "No formal tutoring experience, but strong academic background in mathematics and science.",
+                "approach": "Offers hybrid tutoring options. Willing to conduct group sessions and adapt to student needs.",
+                "Classes": "Algebra, Biology, World History",
+                "grades": "6th-9th",
+                "hours": "Mon & Wed after 5",
+                "rate": "$16/hour",
+                "testimonials": [],
+                "extracurricular": "Participates in Cross Country and Track and Field. Volunteers at Gramatan Village and is involved with Parsons Fine Arts."
+            },
+            "charlotte-dorr": {
+                "name": "Charlotte Dorr",
+                "subject": "Science, Math, English",
+                "image": "img/Charlotte.png",
+                "email": "charlotted27@bronxvilleschool.org",
+                "academic": "High-achieving student with consistently high A's in AP Chemistry, AP CSP, and advanced math courses. Doubled science coursework freshman year, demonstrating strong academic commitment.",
+                "experience": "Informal tutoring in biology and math. Also has experience tutoring beginner-level music, showing adaptability in teaching.",
+                "approach": "Offers hybrid tutoring with a flexible teaching style, adapting methods to maximize student learning and accommodate individual needs.",
+                "Classes": "Algebra 1, Intro Chemistry, Biology, Earth Science, English 9-10",
+                "grades": "Ideally Freshman or Younger",
+                "hours": "Wed, Tue, Fri (Generally Available)",
+                "rate": "$20/hour",
+                "testimonials": [],
+                "extracurricular": "Active in Model United Nations, plays harp in orchestra, runs cross country, and works as a babysitter."
+            },
+            "elizabeth-barnes": {
+                "name": "Elizabeth Barnes",
+                "subject": "French, English, Math, History",
+                "image": "img/Elizabeth.png",
+                "email": "elizabethdbarnes11@gmail.com",
+                "academic": "High-achieving student with 4.28 unweighted GPA, enrolled in honors and AP classes. Accomplished in National History Day research and achieved perfect scores on National French Exam for two consecutive years.",
+                "experience": "Experienced in helping younger siblings with homework and working with children through babysitting and summer camp roles. Skilled at articulating complex information clearly.",
+                "approach": "Offers both in-person and Zoom tutoring. Emphasizes repeated practice and core concept understanding, with a flexible teaching style tailored to individual student needs.",
+                "Classes": "Middle School English/History, French 1-2, Middle School Math, Algebra 1",
+                "grades": "Elementary/Middle School, 9th Grade",
+                "hours": "Wed after 4:15, Fri, Sun",
+                "rate": "$20/hour",
+                "testimonials": [],
+                "extracurricular": "Active in crew, writing, and art. Volunteers with Youth Community Fund and Gramatan Village. Serves as Grade Representative in Student-Faculty Legislature, works with school newspaper and TASSEL teaching English to Cambodian students."
+            },
+            "maggie-minor": {
+                "name": "Maggie Minor",
+                "subject": "Math, Chemistry",
+                "image": "img/Maggie.jpg",
+                "email": "maggiem26@bronxvilleschool.org",
+                "academic": "Two-time recipient of the Roy D Williamson Award for Excellence in Math. Currently taking advanced courses including AP Chemistry, AP World History, and AP Computer Science Principles.",
+                "experience": "Experienced in tutoring English to young kids in Cambodia through TASSEL program. Has also tutored younger Bronxville students in various subject areas.",
+                "approach": "Offers hybrid tutoring options, flexible to student needs and learning styles.",
+                "Classes": "Geometry-Trigonometry, Algebra 2/Pre-Calculus, AP Chemistry, AP Computer Science Principles",
+                "grades": "6-10",
+                "hours": "Weeknights 3-6, Weekends",
+                "rate": "$30-40/hour",
+                "testimonials": [],
+                "extracurricular": "Active in squash, volunteering, and tutoring through TASSEL program."
+            },
+            "christopher-wilmott": {
+                "name": "Christopher Wilmott",
+                "subject": "Science, Math, History",
+                "image": "img/Chris.jpeg",
+                "email": "christopherwilmott26@gmail.com",
+                "academic": "High-achieving student with a 4.1 GPA, demonstrating strong academic performance across multiple disciplines.",
+                "experience": "Tutored a freshman in Core Chemistry and Physics during junior year, showing experience in breaking down scientific concepts.",
+                "approach": "Prefers in-person tutoring, willing to work with multiple students in a session.",
+                "Classes": "Geometry-Trigonometry, Algebra 2/Pre-Calculus, Differential Calculus, AP Chemistry, AP Physics 1, Core Chemistry and Physics, World History, AP World History, AP US History, Earth Science",
+                "grades": "No Preference",
+                "hours": "All Times Available",
+                "rate": "$30/hour",
+                "testimonials": [],
+                "extracurricular": "Varsity Tennis and Ski Team member. Involved in Chemistry Olympiad, Jazz Band, Science Speakers, and Careers Club."
+            },
+            "julian-gonzalez": {
+                "name": "Julian Gonzalez",
+                "subject": "Science & Mathematics",
+                "image": "img/Julian.jpeg",
+                "email": "hooleeinn@gmail.com",
+                "academic": "Achieved a 5 on AP Chemistry exam. Maintains an A in Geometry-Trigonometry and currently studying AP Physics. Self-studied AP Biology, demonstrating academic initiative.",
+                "experience": "No formal tutoring experience at this time.",
+                "approach": "Prefers Zoom tutoring. Open to working with students taking specific science and math courses.",
+                "subjects": "Geometry-Trigonometry, AP Chemistry, AP Physics, Core Chemistry/Physics",
+                "grades": "Anyone taking listed courses or middle school science/math",
+                "hours": "Weekends Afternoons",
+                "rate": "$15/hour",
+                "testimonials": [],
+                "extracurricular": "Participates in track and works part-time."
+            },
+            "jack-goddard": {
+                "name": "Jack Goddard",
+                "subject": "Math, Science",
+                "image": "img/Jack.JPG",
+                "email": "jackhgoddard@gmail.com",
+                "academic": "Entering 12th grade, following the highest math track. Completed AP Physics and AP Chemistry. Scheduled for an independent study in physics next year.",
+                "experience": "New tutor, bringing enthusiasm and recent academic experience to tutoring.",
+                "approach": "Offers flexible tutoring options including in-person, Zoom, and hybrid formats. Willing to work with multiple students in a session.",
+                "Classes": "Math up to Differential Calculus, Core Chemistry/Physics, AP Chemistry, AP Physics 1",
+                "grades": "No Preference",
+                "hours": "Weekdays after 3:30",
+                "rate": "$20/hour",
+                "testimonials": [],
+                "extracurricular": "Active in soccer, including refereeing soccer games. Co-president of the Math Club."
+            },
+            "matthew-bici": {
+                "name": "Matthew Bici",
+                "subject": "Mathematics, Sciences",
+                "image": "img/Mathew.png",
+                "email": "matthewgbici146@gmail.com",
+                "academic": "Completed multiple AP courses including AP Chemistry, consistently maintaining A averages. Enrolled in highest rigor math classes at Bronxville High School.",
+                "experience": "Experienced in informal tutoring, including helping cousins in Algebra 1 and Geometry. Actively tutors students at Mount Vernon Boys and Girls Club in various math subjects.",
+                "approach": "Offers hybrid tutoring options with flexibility for individual and group sessions.",
+                "Classes": "Algebra 1, Algebra 2, Core Chemistry, Core Physics, AP Chemistry",
+                "grades": "7-10",
+                "hours": "Monday-Friday after 6:30",
+                "rate": "$30/hour (Individual), $25/hour (Group)",
+                "testimonials": [],
+                "extracurricular": "Varsity Swimmer, Boy Scouts of America member, performs music at small venues."
+            }
         };
 
         // Function to get URL parameters
@@ -255,6 +247,52 @@
             const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
             const results = regex.exec(location.search);
             return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Function to send email (same as in index.html)
+        function sendEmail(email, tutorName, subjects) {
+            const subject = `Tutoring Request - ${subjects}`;
+            const body = `Hi ${tutorName},
+
+I am interested in scheduling a tutoring session for ${subjects}.
+
+Please let me know your availability.
+
+Thank you!`;
+
+            const choice = prompt(
+                'How would you like to contact the tutor?\n\n' +
+                '1 - Open in Gmail (recommended)\n' +
+                '2 - Open in default email app\n' +
+                '3 - Copy email info to clipboard\n\n' +
+                'Enter 1, 2, or 3:'
+            );
+
+            if (choice === '1') {
+                const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                window.open(gmailUrl, '_blank');
+            } else if (choice === '2') {
+                const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                window.location.href = mailtoUrl;
+                
+                setTimeout(() => {
+                    alert(`If your email didn't open, you can manually email: ${email}\n\nSubject: ${subject}`);
+                }, 1000);
+            } else if (choice === '3') {
+                const emailInfo = `Email: ${email}\nSubject: ${subject}\n\n${body}`;
+                
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(emailInfo).then(() => {
+                        alert('Email information copied to clipboard!\n\nYou can now paste it into any email app.');
+                    }).catch(() => {
+                        prompt('Copy this email information:', emailInfo);
+                    });
+                } else {
+                    prompt('Copy this email information:', emailInfo);
+                }
+            } else {
+                alert(`To schedule a meeting, email: ${email}`);
+            }
         }
 
         // Function to load tutor profile
@@ -296,7 +334,7 @@
                         <div class="info-grid">
                             <div class="info-item">
                                 <p class="info-label">Classes</p>
-                                <p>${tutor.Classes}</p>
+                                <p>${tutor.Classes || tutor.subjects}</p>
                             </div>
                             <div class="info-item">
                                 <p class="info-label">Grade Levels</p>
@@ -341,10 +379,10 @@
                         <h3 class="section-title">Contact Information</h3>
                         <p>Email: <a href="mailto:${tutor.email}">${tutor.email}</a></p>
                         <p>Availability: Please email to schedule a consultation or tutoring session.</p>
-                        <button onclick="window.location.href='mailto:${tutor.email}?subject=Tutoring%20Inquiry'" class="contact-button">Schedule Meeting</button>
+                        <button onclick="sendEmail('${tutor.email}', '${tutor.name}', '${tutor.subject}')" class="contact-button">Schedule Meeting</button>
                     </section>
 
-                    <a href="/Web.html" class="back-link">← Back to All Tutors</a>`;
+                    <a href="index.html" class="back-link">← Back to All Tutors</a>`;
                 
                 // Update the page content
                 tutorProfile.innerHTML = html;
@@ -357,7 +395,7 @@
                     <div class="error-message">
                         <h2>Tutor Not Found</h2>
                         <p>Sorry, we couldn't find information for the requested tutor.</p>
-                        <a href="/Web.html" class="back-link">← Back to All Tutors</a>
+                        <a href="index.html" class="back-link">← Back to All Tutors</a>
                     </div>`;
             }
         }
