@@ -504,4 +504,36 @@ Thank you!`;
                 const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
                 window.location.href = mailtoUrl;
                 
-                // Fallback message if it doesn't
+                // Fallback message if it doesn't work
+                setTimeout(() => {
+                    alert(`If your email didn't open, you can manually email: ${email}\n\nSubject: ${subject}`);
+                }, 1000);
+            } else if (choice === '3') {
+                // Copy all info to clipboard
+                const emailInfo = `Email: ${email}\nSubject: ${subject}\n\n${body}`;
+                
+                // Try modern clipboard API first
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(emailInfo).then(() => {
+                        alert('Email information copied to clipboard!\n\nYou can now paste it into any email app.');
+                    }).catch(() => {
+                        // Fallback if clipboard fails
+                        prompt('Copy this email information:', emailInfo);
+                    });
+                } else {
+                    // Old browser fallback
+                    prompt('Copy this email information:', emailInfo);
+                }
+            } else {
+                // If they cancel or enter something else, just show the email
+                alert(`To schedule a meeting, email: ${email}`);
+            }
+        }
+        
+        // Show all tutors on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            filterTutors('all');
+        });
+    </script>
+</body>
+</html>
