@@ -3,24 +3,396 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutor Details | Bronxville High School</title>
+    <title>High School Tutor Page</title>
     <link rel="icon" href="img/faviconFinal.png" type="image/png">
     <link rel="stylesheet" href="test.css">
 </head>
 
 <body>
     <header>
-        <h1>Bronxville High School Tutor Page</h1>
+        <h1>High School Tutor Page</h1>
         <nav>
-            <a href="index.html" class="nav-link">Back to Tutors</a>
+            <a href="#" class="nav-link" onclick="filterTutors('all'); return false;">All</a>
+            <a href="#" class="nav-link" onclick="filterTutors('math'); return false;">Math</a>
+            <a href="#" class="nav-link" onclick="filterTutors('science'); return false;">Science</a>
+            <a href="#" class="nav-link" onclick="filterTutors('computer-science'); return false;">Computer Science</a>
+            <a href="#" class="nav-link" onclick="filterTutors('english'); return false;">English</a>
+            <a href="#" class="nav-link" onclick="filterTutors('history'); return false;">History</a>
+            <a href="#" class="nav-link" onclick="filterTutors('spanish'); return false;">Spanish</a>
+            <a href="#" class="nav-link" onclick="filterTutors('french'); return false;">French</a>
+            <a href="#" class="nav-link" onclick="filterTutors('latin'); return false;">Latin</a>
+            <a href="#" class="nav-link" onclick="filterTutors('mandarin'); return false;">Mandarin</a>
         </nav>
     </header>
 
     <main>
-        <div class="tutor-profile-container" id="tutor-profile">
-            <!-- Content will be loaded dynamically with JavaScript -->
-            <p>Loading tutor information...</p>
+        <section class="tutor-section">
+            <div class="section-header">
+                <div class="divider"></div>
+                <h2 id="section-title">All Tutors</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="tutor-container">
+                <div class="profile" data-subjects="math,science,computer-science">
+                    <div class="name">Carson Kochansky</div>
+                    <div class="image">
+                        <img src="img/Carson.png" alt="Carson Kochansky">
+                    </div>
+                    <div class="details">
+                        <div class="info-group">
+                            <p><strong>Topic:</strong> Mathematics & Science</p>
+                            <p><strong>Times:</strong> Sat, Sun, Mon/Fri after 5</p>
+                            <p><strong>Charge:</strong> $40/hour (Ind.), $25/hour (Group)</p>
+                            <p><strong>Interests:</strong> Soccer, Astronomy, Zoology</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>Contact:</strong> <a href="tel:347-978-6259">347-978-6259</a></p>
+                            <p><a href="mailto:carsonk26@bronxvilleschool.org">carsonk26@bronxvilleschool.org</a></p>
+                            <button onclick="sendEmail('carsonk26@bronxvilleschool.org', 'Carson', 'Mathematics & Science')">Schedule Meeting</button>
+                            <p class="learn-more"><a href="about.html?id=carson-kochansky">Learn More About Carson</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile" data-subjects="math,science,computer-science,french">
+                    <div class="name">Kara Kochansky</div>
+                    <div class="image">
+                        <img src="img/Kara.png" alt="Kara Kochansky">
+                    </div>
+                    <div class="details">
+                        <div class="info-group">
+                            <p><strong>Topic:</strong> Mathematics, Science & French</p>
+                            <p><strong>Times:</strong> Mon-Fri after 5:15, Sat-Sun 9-5</p>
+                            <p><strong>Charge:</strong> $35/hour</p>
+                            <p><strong>Interests:</strong> Soccer, Coding, Running</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>Contact:</strong> <a href="tel:347-978-6301">347-978-6301</a></p>
+                            <p><a href="mailto:karak26@bronxvilleschool.org">karak26@bronxvilleschool.org</a></p>
+                            <button onclick="sendEmail('karak26@bronxvilleschool.org', 'Kara', 'Mathematics, Science & French')">Schedule Meeting</button>
+                            <p class="learn-more"><a href="about.html?id=kara-kochansky">Learn More About Kara</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile" data-subjects="english,history,math,science,mandarin">
+                    <div class="name">Tiantong Wang</div>
+                    <div class="image">
+                        <img src="img/Actual Tong.png" alt="Tiantong Wang">
+                    </div>
+                    <div class="details">
+                        <div class="info-group">
+                            <p><strong>Topic:</strong> English, History, Mathematics, Science & Mandarin</p>
+                            <p><strong>Times:</strong> Tue-Thu after 4:30, Sat after 12:30, All Sun</p>
+                            <p><strong>Charge:</strong> $35/hour, $45/hour (Mandarin)</p>
+                            <p><strong>Interests:</strong> Weightlifting, Oboe, Law</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>Contact:</strong> <a href="tel:781-350-6890">781-350-6890</a></p>
+                            <p><a href="mailto:Tiantongw26@bronxvilleschool.org">Tiantongw26@bronxvilleschool.org</a></p>
+                            <button onclick="sendEmail('Tiantongw26@bronxvilleschool.org', 'Tiantong', 'English, History, Mathematics, Science & Mandarin')">Schedule Meeting</button>
+                            <p class="learn-more"><a href="about.html?id=tiantong-wang">Learn More About Tiantong</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile" data-subjects="math,science,computer-science,english">
+                    <div class="name">Simon Leka</div>
+                    <div class="image">
+                        <img src="img/Simon.png" alt="Simon Leka">
+                    </div>
+                    <div class="details">
+                        <div class="info-group">
+                            <p><strong>Topic:</strong> Mathematics, Science, Computer Science & English</p>
+                            <p><strong>Times:</strong> Flexible</p>
+                            <p><strong>Charge:</strong> Open to Discussion</p>
+                            <p><strong>Interests:</strong> Soccer, Music, Public Speaking</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>Contact:</strong> <a href="tel:914-400-8837">914-400-8837</a></p>
+                            <p><a href="mailto:simonl26@bronxvilleschool.org">simonl26@bronxvilleschool.org</a></p>
+                            <button onclick="sendEmail('simonl26@bronxvilleschool.org', 'Simon', 'Mathematics, Science, Computer Science & English')">Schedule Meeting</button>
+                            <p class="learn-more"><a href="about.html?id=simon-leka">Learn More About Simon</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile" data-subjects="biology,earth-science,chemistry,science">
+                    <div class="name">Rye Adkins</div>
+                    <div class="image">
+                        <img src="img/Rye.jpeg" alt="Ryes Adkins">
+                    </div>
+                    <div class="details">
+                        <div class="info-group">
+                            <p><strong>Topic:</strong> Biology, Earth Science & Chemistry</p>
+                            <p><strong>Times:</strong> Mon, Tue, Thu, Fri 3-5</p>
+                            <p><strong>Charge:</strong> $30/hour (Ind.), $25/hour (Group)</p>
+                            <p><strong>Interests:</strong> Cooking, Soccer, Hockey</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>Contact:</strong> <a href="tel:914-261-2841">914-261-2841</a></p>
+                            <p><a href="mailto:ryesigurdsonadkins@gmail.com">ryesigurdsonadkins@gmail.com</a></p>
+                            <button onclick="sendEmail('ryesigurdsonadkins@gmail.com', 'Rye', 'Biology, Earth Science & Chemistry')">Schedule Meeting</button>
+                            <p class="learn-more"><a href="about.html?id=ryes-adkins">Learn More About Rye</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile" data-subjects="math,chemistry,physics,french,science">
+                    <div class="name">Teo Valdes</div>
+                    <div class="image">
+                        <img src="img/Teo.jpeg" alt="Teo Valdes">
+                    </div>
+                    <div class="details">
+                        <div class="info-group">
+                            <p><strong>Topic:</strong> Mathematics, Chemistry, Physics & French</p>
+                            <p><strong>Times:</strong> Every Day</p>
+                            <p><strong>Charge:</strong> $30/hour</p>
+                            <p><strong>Interests:</strong> Coding, Math Club</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>Contact:</strong> <a href="tel:914-354-9851">914-354-9851</a></p>
+                            <p><a href="mailto:teov26@bronxvilleschool.org">teov26@bronxvilleschool.org</a></p>
+                            <button onclick="sendEmail('teov26@bronxvilleschool.org', 'Teo', 'Mathematics, Chemistry, Physics & French')">Schedule Meeting</button>
+                            <p class="learn-more"><a href="about.html?id=teo-valdes">Learn More About Teo</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile" data-subjects="math,science">
+                    <div class="name">Jack Goddard</div>
+                    <div class="image">
+                        <img src="img/Jack.JPG" alt="Jack Goddard">
+                    </div>
+                    <div class="details">
+                        <div class="info-group">
+                            <p><strong>Topic:</strong> Mathematics & Science</p>
+                            <p><strong>Times:</strong> Weekdays after 3:30</p>
+                            <p><strong>Charge:</strong> $20/hour</p>
+                            <p><strong>Interests:</strong> Soccer, Math</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>Contact:</strong> <a href="tel:914-265-0362">914-265-0362</a></p>
+                            <p><a href="mailto:jackhgoddard@gmail.com">jackhgoddard@gmail.com</a></p>
+                            <button onclick="sendEmail('jackhgoddard@gmail.com', 'Jack', 'Mathematics & Science')">Schedule Meeting</button>
+                            <p class="learn-more"><a href="about.html?id=jack-goddard">Learn More About Jack</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile" data-subjects="math,science">
+                    <div class="name">Ee-ee Sung</div>
+                    <div class="image">
+                        <img src="img/Ee-ee.png" alt="Ee-ee Sung">
+                    </div>
+                    <div class="details">
+                        <div class="info-group">
+                            <p><strong>Topic:</strong> Algebra, Middle School Math & Science</p>
+                            <p><strong>Times:</strong> Mon & Wed after 5</p>
+                            <p><strong>Charge:</strong> $16/hour</p>
+                            <p><strong>Interests:</strong> Painting, Drawing</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>Contact:</strong></p>
+                            <p><a href="mailto:sungeeee0@gmail.com">sungeeee0@gmail.com</a></p>
+                            <button onclick="sendEmail('sungeeee0@gmail.com', 'Ee-ee', 'Algebra, Middle School Math & Science')">Schedule Meeting</button>
+                            <p class="learn-more"><a href="about.html?id=ee-ee-sung">Learn More About Ee-ee</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile" data-subjects="science,math,english">
+                    <div class="name">Charlotte Dorr</div>
+                    <div class="image">
+                        <img src="img/charDorr.png" alt="Charlotte Dorr">
+                    </div>
+                    <div class="details">
+                        <div class="info-group">
+                            <p><strong>Topic:</strong> Science, Math & English</p>
+                            <p><strong>Times:</strong> Wed, Tue, Fri (Generally Available)</p>
+                            <p><strong>Charge:</strong> $20/hour</p>
+                            <p><strong>Interests:</strong> STEM, Engineering, Model UN</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>Contact:</strong> <a href="tel:914-346-9768">914-346-9768</a></p>
+                            <p><a href="mailto:charlotted27@bronxvilleschool.org">charlotted27@bronxvilleschool.org</a></p>
+                            <button onclick="sendEmail('charlotted27@bronxvilleschool.org', 'Charlotte', 'Science, Math & English')">Schedule Meeting</button>
+                            <p class="learn-more"><a href="about.html?id=charlotte-dorr">Learn More About Charlotte</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile" data-subjects="french,english,math,history">
+                    <div class="name">Elizabeth Barnes</div>
+                    <div class="image">
+                        <img src="img/Elizabeth.png" alt="Elizabeth Barnes">
+                    </div>
+                    <div class="details">
+                        <div class="info-group">
+                            <p><strong>Topic:</strong> French, English, Math & History</p>
+                            <p><strong>Times:</strong> Wed after 4:15, Fri, Sun</p>
+                            <p><strong>Charge:</strong> $20/hour</p>
+                            <p><strong>Interests:</strong> Crew, Writing, Art</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>Contact:</strong></p>
+                            <p><a href="mailto:elizabethdbarnes11@gmail.com">elizabethdbarnes11@gmail.com</a></p>
+                            <button onclick="sendEmail('elizabethdbarnes11@gmail.com', 'Elizabeth', 'French, English, Math & History')">Schedule Meeting</button>
+                            <p class="learn-more"><a href="about.html?id=elizabeth-barnes">Learn More About Elizabeth</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile" data-subjects="math,chemistry,science">
+                    <div class="name">Maggie Minor</div>
+                    <div class="image">
+                        <img src="img/Maggie.jpg" alt="Maggie Minor">
+                    </div>
+                    <div class="details">
+                        <div class="info-group">
+                            <p><strong>Topic:</strong> Mathematics & Chemistry</p>
+                            <p><strong>Times:</strong> Weeknights 3-6, Weekends</p>
+                            <p><strong>Charge:</strong> $30-40/hour</p>
+                            <p><strong>Interests:</strong> Squash, Coding, Research</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>Contact:</strong> <a href="tel:917-280-6435">917-280-6435</a></p>
+                            <button onclick="sendEmail('maggiem26@bronxvilleschool.org', 'Maggie', 'Mathematics & Chemistry')">Schedule Meeting</button>
+                            <p class="learn-more"><a href="about.html?id=maggie-minor">Learn More About Maggie</a></p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="profile" data-subjects="science,math,history">
+                    <div class="name">Christopher Wilmott</div>
+                    <div class="image">
+                        <img src="img/Chris.jpeg" alt="Christopher Wilmott">
+                    </div>
+                    <div class="details">
+                        <div class="info-group">
+                            <p><strong>Topic:</strong> Science, Math & History</p>
+                            <p><strong>Times:</strong> All Times Available</p>
+                            <p><strong>Charge:</strong> $30/hour</p>
+                            <p><strong>Interests:</strong> Chemistry, Engineering, Mathematics</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>Contact:</strong> <a href="tel:802-289-7874">802-289-7874</a></p>
+                            <p><a href="mailto:christopherwilmott26@gmail.com">christopherwilmott26@gmail.com</a></p>
+                            <button onclick="sendEmail('christopherwilmott26@gmail.com', 'Christopher', 'Science, Math & History')">Schedule Meeting</button>
+                            <p class="learn-more"><a href="about.html?id=christopher-wilmott">Learn More About Christopher</a></p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="profile" data-subjects="chemistry,physics,math,spanish,science">
+    <div class="name">Julian Gonzalez</div>
+    <div class="image">
+        <img src="img/Juls.jpeg" alt="Julian Gonzalez">
+    </div>
+    <div class="details">
+        <div class="info-group">
+            <p><strong>Topic:</strong> Chemistry, Physics, Mathematics & Spanish</p>
+            <p><strong>Times:</strong> Weekend Afternoons</p>
+            <p><strong>Charge:</strong> $20/hour (non-AP), $25-40/hour (AP)</p>
+            <p><strong>Interests:</strong> Chemistry, Biology, Physics, Medicine, Track</p>
         </div>
+        <div class="contact-info">
+            <p><strong>Contact:</strong> <a href="tel:914-364-6419">914-364-6419</a></p>
+            <p><a href="mailto:hooleeinn@gmail.com">hooleeinn@gmail.com</a></p>
+            <button onclick="sendEmail('hooleeinn@gmail.com', 'Julian', 'Chemistry, Physics, Mathematics & Spanish')">Schedule Meeting</button>
+            <p class="learn-more"><a href="about.html?id=julian-gonzalez">Learn More About Julian</a></p>
+        </div>
+    </div>
+</div>     
+
+                <div class="profile" data-subjects="math,science">
+                    <div class="name">Matthew Bici</div>
+                    <div class="image">
+                        <img src="img/Mathew.png" alt="Matthew Bici">
+                    </div>
+                    <div class="details">
+                        <div class="info-group">
+                            <p><strong>Topic:</strong> Mathematics & Sciences</p>
+                            <p><strong>Times:</strong> Mon-Fri after 6:30</p>
+                            <p><strong>Charge:</strong> $30/hour (Ind.), $25/hour (Group)</p>
+                            <p><strong>Interests:</strong> Swimming, Music, Engineering</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>Contact:</strong> <a href="tel:917-960-0510">917-960-0510</a></p>
+                            <p><a href="mailto:matthewgbici146@gmail.com">matthewgbici146@gmail.com</a></p>
+                            <button onclick="sendEmail('matthewgbici146@gmail.com', 'Matthew', 'Mathematics & Sciences')">Schedule Meeting</button>
+                            <p class="learn-more"><a href="about.html?id=matthew-bici">Learn More About Matthew</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile" data-subjects="history,math,computer-science">
+                    <div class="name">Sean Ahn</div>
+                    <div class="image">
+                        <img src="img/Sean.JPG" alt="Sean Ahn">
+                    </div>
+                    <div class="details">
+                        <div class="info-group">
+                            <p><strong>Topic:</strong> History, Mathematics & Computer Science (Java)</p>
+                            <p><strong>Times:</strong> Mon-Wed 6-8, Fri 6-10</p>
+                            <p><strong>Charge:</strong> $15-30/hour</p>
+                            <p><strong>Interests:</strong> Running, Reading, Video Games</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>Contact:</strong> <a href="tel:646-244-7389">646-244-7389</a></p>
+                            <p><a href="mailto:seana27@bronxvilleschool.org">seana27@bronxvilleschool.org</a></p>
+                            <button onclick="sendEmail('seana27@bronxvilleschool.org', 'Sean', 'History, Mathematics & Computer Science')">Schedule Meeting</button>
+                            <p class="learn-more"><a href="about.html?id=sean-ahn">Learn More About Sean</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile" data-subjects="spanish,math,science,music">
+                    <div class="name">Valentino Angelani</div>
+                    <div class="image">
+                        <img src="img/Val.png" alt="Valentino Angelani">
+                    </div>
+                    <div class="details">
+                        <div class="info-group">
+                            <p><strong>Topic:</strong> Spanish, Mathematics, Sciences & Music Instruments</p>
+                            <p><strong>Times:</strong> Weekends after 12:00, Weekdays after 4:30</p>
+                            <p><strong>Charge:</strong> $30/hour (Spanish/Band), $20/hour (Other Subjects)</p>
+                            <p><strong>Interests:</strong> Sports, Weightlifting, Music</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>Contact:</strong> <a href="tel:408-528-5193">408-528-5193</a></p>
+                            <p><a href="mailto:valentinoa27@bronxvilleschool.org">valentinoa27@bronxvilleschool.org</a></p>
+                            <button onclick="sendEmail('valentinoa27@bronxvilleschool.org', 'Valentino', 'Spanish, Mathematics, Sciences & Music')">Schedule Meeting</button>
+                            <p class="learn-more"><a href="about.html?id=valentino-angelani">Learn More About Valentino</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FIXED: Updated Sam's profile with correct data-subjects and link -->
+                <div class="profile" data-subjects="history,computer-science,music,english">
+                    <div class="name">Samuel Bright</div>
+                    <div class="image">
+                        <img src="img/Sam.png" alt="Samuel Bright">
+                    </div>
+                    <div class="details">
+                        <div class="info-group">
+                            <p><strong>Topic:</strong> History, SAT, Music & Computer Science</p>
+                            <p><strong>Times:</strong> Any time </p>
+                            <p><strong>Charge:</strong> $30/hour (history), $25/hour (other subjects)</p>
+                            <p><strong>Interests:</strong> Music, History, Computer Science, AI, Philosophy, Politics, Geography, English</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><strong>Contact:</strong> <a href="tel:512-206-6017">512-206-6017</a></p>
+                            <p><a href="mailto:samuelb26@bronxvilleschool.org">samuelb26@bronxvilleschool.org</a></p>
+                            <button onclick="sendEmail('samuelb26@bronxvilleschool.org', 'Sam', 'History, SAT, Music & Computer Science')">Schedule Meeting</button>
+                            <p class="learn-more"><a href="about.html?id=sam-bright">Learn More About Sam</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -53,7 +425,7 @@
                 "subject": "Math, Science, French",
                 "image": "img/Kara.png",
                 "email": "karak26@bronxvilleschool.org",
-                "academic": "Senior with multiple academic honors, including Yale Book Award, Women's Service Memorial Award and Rhodes College Book Award. Consistently recognized for critical thinking, leadership, and engaged citizenship by the Bronxville High School. Earned the Lucie Massey Memorial Award for Excellence in French and gold and silver medals in the National French Contest.",
+                "academic": "Senior with multiple academic honors, including Yale Book Award, Women's Service Memorial Award and Rhodes College Book Award. Consistently recognized for critical thinking, leadership, and engaged citizenship by the Bronxville High School. Earned the Lucie Massey Memorial Award for Excellence in French and gold and silver medals in the National French Contest.",
                 "experience": "Currently tutoring Algebra I, Geometry, and Chemistry. Has prior tutoring experience in French and various math subjects, demonstrating a versatile teaching background. Teaches Cambodian students English through Tassel school.",
                 "approach": "Offers Zoom, in-person, and hybrid tutoring. Flexible in teaching style, able to help with homework, test preparation, and creating custom study materials tailored to student needs.",
                 "Classes": "Math: Algebra I, Algebra II. Geometry, Precalculus; Science: Chemistry, AP Biology, AP Chemistry; Computer Science: AP CSP, AP CSA; French: Up to French III",
@@ -251,7 +623,7 @@
                 "academic": "Currently taking AP World History and AP Computer Science A. Completed Algebra II/Pre-Calculus with an A+ and achieved 1st place in school for National History Day paper.",
                 "experience": "Taught SAT math at Mount Vernon Boys and Girls Club, demonstrating tutoring skills and community involvement.",
                 "approach": "Offers hybrid tutoring options, comfortable with both in-person (walkable) and Zoom sessions. Willing to work with multiple students.",
-                "subjects": "Algebra 1, Geometry-Trigonometry, Algebra 2/Pre-Calculus, AP World History, AP Computer Science A (Java)",
+                "Classes": "Algebra 1, Geometry-Trigonometry, Algebra 2/Pre-Calculus, AP World History, AP Computer Science A (Java)",
                 "grades": "Younger than 11th grade",
                 "hours": "Mon-Wed 6-8, Fri 6-10",
                 "rate": "$15-30/hour",
@@ -266,7 +638,7 @@
                 "academic": "Accomplished sophomore taking AP World and AP Spanish. Completed Algebra 2/Trigonometry and preparing for Pre-Calculus over the summer. Recognized for musical achievements.",
                 "experience": "Conducted SAT tutoring at Boys and Girls Club, demonstrating tutoring skills and community involvement.",
                 "approach": "Flexible with in-person or Zoom tutoring. Known for a laid-back teaching style that uses metaphors and comparisons to simplify complex topics.",
-                "subjects": "Spanish (including AP), Algebra 1 & 2, Geometry/Trigonometry, Core Chemistry/Physics, Earth Science, Saxophone, Flute",
+                "Classes": "Spanish (including AP), Algebra 1 & 2, Geometry/Trigonometry, Core Chemistry/Physics, Earth Science, Saxophone, Flute",
                 "grades": "10 and below (12 and below for Spanish)",
                 "hours": "Weekends after 12:00, Weekdays after 4:30",
                 "rate": "$30/hour (Spanish/Band), $20/hour (Other Subjects)",
@@ -276,7 +648,7 @@
             "sam-bright": {
                 "name": "Samuel Bright",
                 "subject": "World History, American History, Computer Science, Earth Science, Music Theory, SAT Math and English",
-                "image": "img/Samuel.png",
+                "image": "img/Sam.png",
                 "email": "samuelb26@bronxvilleschool.org",
                 "academic": "Scored 5 on AP Music Theory, AP Computer Science A, AP English Language and Composition and AP History tests. Received 1580 on the SAT (800 English 780 Math), experience teaching English for ESL students + both English and Math for SAT takers.",
                 "experience": "Founded the first program providing music lessons to underprivileged kids in Mount Vernon, led a team of musicians teaching 25+ kids guitar, bass and percussion instruments in weekly sessions. I have taught English as a second language to 15+ Russian Political refugees, and have translated for large political events. I have done freelance tutoring for many students for the SAT, AP Music Theory and AP history classes.",
@@ -287,8 +659,114 @@
                 "rate": "$30/hour for history, $25/hour for other subjects.",
                 "testimonials": [],
                 "extracurricular": "Co-author of AI research paper in submission to top 10 CS conference (IEEE Symposium on Security & Privacy), All-State level classical double bassist, National Merit Semifinalist, paid performer at a jazz club, studio intern for Al Hemberger (producer for Rihanna, Christina Aguilera, NSYNC), member of several bands that generated $7000 in ticket revenue last summer, political event organizer for Russian diaspora, president of Jazz Band club, history/politics/philosophy nerd."
-}
+            }
         };
+
+        function filterTutors(subject) {
+            const profiles = document.querySelectorAll('.profile');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sectionTitle = document.getElementById('section-title');
+            
+            // Update active nav link
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                const linkText = link.textContent.toLowerCase();
+                if (linkText === subject || (subject === 'all' && linkText === 'all')) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Update section title
+            const titles = {
+                'all': 'All Tutors',
+                'math': 'Math Tutors',
+                'science': 'Science Tutors',
+                'computer-science': 'Computer Science Tutors',
+                'english': 'English Tutors',
+                'history': 'History Tutors',
+                'spanish': 'Spanish Tutors',
+                'french': 'French Tutors',
+                'latin': 'Latin Tutors',
+                'mandarin': 'Mandarin Tutors'
+            };
+            sectionTitle.textContent = titles[subject] || 'All Tutors';
+            
+            // Filter profiles
+            profiles.forEach(profile => {
+                const subjects = profile.getAttribute('data-subjects');
+                if (subject === 'all') {
+                    profile.style.display = 'flex';
+                } else if (subjects) {
+                    // Split subjects and check for exact match
+                    const subjectArray = subjects.split(',');
+                    if (subjectArray.includes(subject)) {
+                        profile.style.display = 'flex';
+                    } else {
+                        profile.style.display = 'none';
+                    }
+                } else {
+                    profile.style.display = 'none';
+                }
+            });
+        }
+        
+        // Function to send email
+        function sendEmail(email, tutorName, subjects) {
+            // Create the email subject
+            const subject = `Tutoring Request - ${subjects}`;
+            
+            // Create the email body
+            const body = `Hi ${tutorName},
+
+I am interested in scheduling a tutoring session for ${subjects}.
+
+Please let me know your availability.
+
+Thank you!`;
+
+            // Create a nice modal-style choice
+            const choice = prompt(
+                'How would you like to contact the tutor?\n\n' +
+                '1 - Open in Gmail (recommended on computer)\n' +
+                '2 - Open in default email app (recommended on phone)\n' +
+                '3 - Copy email info to clipboard\n\n' +
+                'Enter 1, 2, or 3:'
+            );
+
+            if (choice === '1') {
+                // Gmail - this should work for everyone with internet
+                const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                window.open(gmailUrl, '_blank');
+            } else if (choice === '2') {
+                // Try default email client
+                const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                window.location.href = mailtoUrl;
+                
+                // Fallback message if it doesn't work
+                setTimeout(() => {
+                    alert(`If your email didn't open, you can manually email: ${email}\n\nSubject: ${subject}`);
+                }, 1000);
+            } else if (choice === '3') {
+                // Copy all info to clipboard
+                const emailInfo = `Email: ${email}\nSubject: ${subject}\n\n${body}`;
+                
+                // Try modern clipboard API first
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(emailInfo).then(() => {
+                        alert('Email information copied to clipboard!\n\nYou can now paste it into any email app.');
+                    }).catch(() => {
+                        // Fallback if clipboard fails
+                        prompt('Copy this email information:', emailInfo);
+                    });
+                } else {
+                    // Old browser fallback
+                    prompt('Copy this email information:', emailInfo);
+                }
+            } else {
+                // If they cancel or enter something else, just show the email
+                alert(`To schedule a meeting, email: ${email}`);
+            }
+        }
 
         // Function to get URL parameters
         function getUrlParameter(name) {
@@ -298,56 +776,12 @@
             return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
         }
 
-        // Function to send email (same as in index.html)
-        function sendEmail(email, tutorName, subjects) {
-            const subject = `Tutoring Request - ${subjects}`;
-            const body = `Hi ${tutorName},
-
-I am interested in scheduling a tutoring session for ${subjects}.
-
-Please let me know your availability.
-
-Thank you!`;
-
-            const choice = prompt(
-                'How would you like to contact the tutor?\n\n' +
-                '1 - Open in Gmail (recommended on computer)\n' +
-                '2 - Open in default email app(recommended on phone)\n' +
-                '3 - Copy email info to clipboard\n\n' +
-                'Enter 1, 2, or 3:'
-            );
-
-            if (choice === '1') {
-                const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-                window.open(gmailUrl, '_blank');
-            } else if (choice === '2') {
-                const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-                window.location.href = mailtoUrl;
-                
-                setTimeout(() => {
-                    alert(`If your email didn't open, you can manually email: ${email}\n\nSubject: ${subject}`);
-                }, 1000);
-            } else if (choice === '3') {
-                const emailInfo = `Email: ${email}\nSubject: ${subject}\n\n${body}`;
-                
-                if (navigator.clipboard && navigator.clipboard.writeText) {
-                    navigator.clipboard.writeText(emailInfo).then(() => {
-                        alert('Email information copied to clipboard!\n\nYou can now paste it into any email app.');
-                    }).catch(() => {
-                        prompt('Copy this email information:', emailInfo);
-                    });
-                } else {
-                    prompt('Copy this email information:', emailInfo);
-                }
-            } else {
-                alert(`To schedule a meeting, email: ${email}`);
-            }
-        }
-
-        // Function to load tutor profile
+        // Function to load tutor profile (for about.html page)
         function loadTutorProfile() {
             const tutorId = getUrlParameter('id');
             const tutorProfile = document.getElementById('tutor-profile');
+            
+            if (!tutorProfile) return; // Not on the about page
             
             // Check if tutor exists in our data
             if (tutorData[tutorId]) {
@@ -383,7 +817,7 @@ Thank you!`;
                         <div class="info-grid">
                             <div class="info-item">
                                 <p class="info-label">Classes</p>
-                                <p>${tutor.Classes || tutor.subjects}</p>
+                                <p>${tutor.Classes}</p>
                             </div>
                             <div class="info-item">
                                 <p class="info-label">Grade Levels</p>
@@ -448,9 +882,12 @@ Thank you!`;
                     </div>`;
             }
         }
-
-        // Load the tutor profile when the page loads
-        window.addEventListener('DOMContentLoaded', loadTutorProfile);
+        
+        // Show all tutors on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            filterTutors('all');
+            loadTutorProfile(); // This will only work if on about.html page
+        });
     </script>
 </body>
 </html>
