@@ -22,6 +22,8 @@
             <a href="#" class="nav-link" onclick="filterTutors('french'); return false;">French</a>
             <a href="#" class="nav-link" onclick="filterTutors('latin'); return false;">Latin</a>
             <a href="#" class="nav-link" onclick="filterTutors('mandarin'); return false;">Mandarin</a>
+            <a href="#" class="nav-link" onclick="filterTutors('sat-math'); return false;">SAT Math</a>
+            <a href="#" class="nav-link" onclick="filterTutors('sat-english'); return false;">SAT English</a>
         </nav>
     </header>
 
@@ -102,7 +104,7 @@
                     </div>
                 </div>
 
-                <div class="profile" data-subjects="english,history,math,science,mandarin">
+                <div class="profile" data-subjects="english,history,math,science,mandarin,sat-math,sat-english">
                     <div class="name">Tiantong Wang</div>
                     <div class="image">
                         <img src="img/Actual Tong.png" alt="Tiantong Wang">
@@ -353,7 +355,7 @@
                     </div>
                 </div>
 
-                <div class="profile" data-subjects="history,math,computer-science">
+                <div class="profile" data-subjects="history,math,computer-science,sat-math">
                     <div class="name">Sean Ahn</div>
                     <div class="image">
                         <img src="img/Sean.JPG" alt="Sean Ahn">
@@ -395,7 +397,7 @@
                     </div>
                 </div>
 
-                <div class="profile" data-subjects="history,computer-science,music,english">
+                <div class="profile" data-subjects="history,computer-science,music,english,sat-math,sat-english">
                     <div class="name">Samuel Bright</div>
                     <div class="image">
                         <img src="img/Sam.jpeg" alt="Samuel Bright">
@@ -454,7 +456,9 @@
                 'spanish': 'Spanish Tutors',
                 'french': 'French Tutors',
                 'latin': 'Latin Tutors',
-                'mandarin': 'Mandarin Tutors'
+                'mandarin': 'Mandarin Tutors',
+                'sat-math': 'SAT Math Tutors',
+                'sat-english': 'SAT English Tutors'
             };
             sectionTitle.textContent = titles[subject] || 'All Tutors';
             
@@ -542,5 +546,3 @@ Thank you!`;
     </script>
 </body>
 </html>
-
-
